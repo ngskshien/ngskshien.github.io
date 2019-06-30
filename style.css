@@ -1,0 +1,16 @@
+body{
+	background-color:#000000:
+}
+div#pagebody{
+	text-align:left;
+	background-color:#ffffff;
+}
+
+div#header{
+	height:80px;
+}
+
+h1{padding:10px}
+h1 a {text-decoration:none;}
+h1 a:link{color:#0000ff;}
+h1 a:visited{color:#0000ff;}
