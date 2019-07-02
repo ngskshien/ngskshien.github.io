@@ -4,16 +4,16 @@ body{
 
 div#pagebody{
 	margin: 0 auto;
-	width:1200px;
+	width:1000px;
 	text-align:left;
-	background-color:#000000;
+	background-color:#ffffff;
 }
 
 div#header{
 	margin: 0 auto;
 	height:80px;
-	width:1100px;
-	background-color:#ffffff;
+	width:1000px;
+	background-color:#66ffff;
 }
 
 h1{padding:10px}
@@ -23,52 +23,17 @@ h1 a:visited{color:#0000ff;}
 
 div#mainbody{
 	margin: 0 auto;
-	width:1100px;
+	width:1000px;
 }
 
-div#leftcolumn{
-	float:left;
-	width:200px;
-	background-color:#ff0000;
-}
-
-<<<<<<< HEAD
 div#maincolumn{
 	float:left;
-	width:600px;
-	background-color:#00ff00;
+	width:700px;
+	background-color:#FFFFCC;
 }
 
 div#rightcolumn{
 	float:left;
 	width:300px;
-	background-color:#0000ff;
-=======
-ul#headmenu{
-	background-color:#0000ff;
-}
-
-li#headmenu{
-	float:left;
-	display:inline;
-	list-style-type:none;
-	width:140px;
-	height:40px;
-	text-align:center;
-	padding:5px 0px 0px 0px;
-	background-image:url("picture/buttunA.jpg");
-	background-repeat:no-repeat;
-}
-
-div#maincolumn{
-	width:500px;
-	float:left;
-	background-color:#ff6666;
-}
-
-div#rightmenu{
-	width:300px;
-	float:left;
-	background-color:#55FF77;
->>>>>>> b5c49853940ebaf5194c51bd9956c3515856c4b5
+	background-color:#D0D0D0;
 }
