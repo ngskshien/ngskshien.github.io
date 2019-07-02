@@ -32,7 +32,6 @@ div#leftcolumn{
 	background-color:#ff0000;
 }
 
-<<<<<<< HEAD
 div#maincolumn{
 	float:left;
 	width:600px;
@@ -43,32 +42,4 @@ div#rightcolumn{
 	float:left;
 	width:300px;
 	background-color:#0000ff;
-=======
-ul#headmenu{
-	background-color:#0000ff;
-}
-
-li#headmenu{
-	float:left;
-	display:inline;
-	list-style-type:none;
-	width:140px;
-	height:40px;
-	text-align:center;
-	padding:5px 0px 0px 0px;
-	background-image:url("picture/buttunA.jpg");
-	background-repeat:no-repeat;
-}
-
-div#maincolumn{
-	width:500px;
-	float:left;
-	background-color:#ff6666;
-}
-
-div#rightmenu{
-	width:300px;
-	float:left;
-	background-color:#55FF77;
->>>>>>> b5c49853940ebaf5194c51bd9956c3515856c4b5
 }
