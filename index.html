@@ -1,41 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 <meta http-equiv="content-type" charset="utf-8">
+<title>支援機構のホームページ</title>
 </head>
-<body>
-<div id="pagebody">
-	<div id="header">
-	<h1><a href="index.html">支援機構のホームページ</a></h1>
+<header>
+	<div id="pagetitle">
+		支援機構のホームページ
 	</div>
-	<div id="mainbody">
-		<div id="maincolumn">
-		<h2>はじめに</h2>
-		<p>
-		　ここは支援機構(@ngskshien)のホームページです。だいたい言いたいことはTwitterに排泄するかブログに書き連ねているので「ホームページ」の体裁を用意する必要はあまりないのですが、時系列が存在しない静的な表現の場があってもよいだろうということで一応作りました。何か体系的なことを書きたくなったら使うと思います。また、ブログなどのコンテンツを体系的に並べなおした目次の役割としても使おうと思っています。今後ともどうぞよしなに。
-		</p>
-		<h2>各メニューの中身について</h2>
-		<h4>トップページ</h4>
-		<p>
-		　このページです。各ページへ飛ぶためのポータルサイトみたいなもの。
-		</p>
-		<h4>自己紹介&各種自己サイトリンク</h4>
-		<p>
-		　簡単な自己紹介と、各種SNSや支援機構の関連するウェブサイトへのリンクを紹介したページ。
-		</p>
-		<h4>コンテンツの自己体系化</h4>
-		<p>
-		　ブログなどの内容を時系列を無視してむしろ体系的に並べなおしたリストを提供するページ。一応ブログの方でも「カテゴリー」というのはあるのだけれど、あれもあくまで書いた順番に表示されるに過ぎないので後から強制的に秩序を与えていきたい。
-		</p>
-		</div>
-		<div id="rightcolumn">
-			<ul><a href="index.html">トップページ</a></ul>
-			<ul><a href="introduction.html">自己紹介&各種自己サイトリンク</a></ul>
-			<ul><a href="systematization.html">コンテンツの自己体系化</a></ul>
-			<ul><a href="http://ngskshsh.hatenablog.com/">ブログへのリンク（外部サイト）</a></ul>
+	<div id="titlephoto">
+		<img src="title.jpg" width="1000">
+	</div>
+</header>
+
+<main>
+	<div id="content">
+		<article>
+			<h1>支援機構とは誰？</h1>
+			<p>こんにちは、支援機構です。支援機構は本HPを作成した人間であり、岐阜県に住んでいるサラリーマンです。もちろん本名ではなくハンドルネームです。一言で言うと、オタクかつエンジニアであり、本HPはこの2点に関する言及が主なコンテンツです。詳細な自己紹介は<a href="#">自己紹介の記事</a>をご覧ください</p>
+			<p>オタクとしては、主にゲームやライトノベルを愛好しています。ゲームとしては成人向けゲームを好んでおり、Twitterにはその点に関しての言及も多いです。また、アニメやコミックも好んでおり、最近（ここ5~6年）はVtuberも好んで見ています。</p>
+			<p>エンジニアとしては、化学企業で研究開発をしています。学生時代のバックグランドは物理学で、個人の関心としては数学の社会課題への応用を好んでいます（いわゆる数理工学？）。</p>
+		</article>
+		<article>
+			<h1>本HPの内容</h1>
+			<p>本HPは、<a href="https://ngskshsh.hatenablog.com/">ブログ</a>と<a href="https://booklog.jp/users/ngskshien">ブクログ</a>に分散していたアウトプットを一か所にまとめて、なおかつプラットフォームへの依存を減らすことを目的に作成しました。そのため、日記と本の感想文がメインコンテンツです。</p>
+			<p>またせっかく作成したHPであるので、様々なSNSへのリンクも含め、支援機構がインターネットに放出したものは大体ここから辿れるように整備したいと考えています。</p>
+		</article>
+	</div>
+	<div id ="subcontent">
+		<article>
+			<h1>新着情報</h1>
+			<dl>
+				<dt>2025年1日2日</dt>
+				<dd>本HPを作成</dd>
+			</dl>
+		</article>
+		<article>
+			<h1>リンク集</h1>
+			<ul>
+				<li><a href="https://x.com/ngskshien">Twitter</a></li>
+				<li><a href="https://misskey.io/@ngskshien">Misskey</a></li>
+				<li><a href="https://ngskshsh.hatenablog.com/">旧ブログ</a></li>
+				<li><a href="https://booklog.jp/users/ngskshien">ブクログ</a></li>
+				<li><a href="https://www.youtube.com/@ngskshien">Youtube</a></li>
+				<li><a href="https://www.nicovideo.jp/user/56369031">ニコニコ動画</a></li>
+				<li><a href="https://github.com/ngskshien">GitHub</a></li>
+			</ul>
+		</article>
+		<div>
+			<a class="twitter-timeline" data-width="400" data-height="1000" data-theme="light" href="https://twitter.com/ngskshien?ref_src=twsrc%5Etfw">Tweets by ngskshien</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 	</div>
-</div>
-</body>
+</main>
 </html>
