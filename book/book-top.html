@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<meta http-equiv="content-type" charset="utf-8">
+	<title>本の感想</title>
+</head>
+
+<body>
+	<div id="header"></div>
+	<main>
+		<div id="content">
+			<article>
+				<h1>本の感想</h1>
+				<p>本HPには本の感想文を掲載しています。右の「本の分類」の部分からごアクセスください。</p>
+			</article>
+			<article>
+				<h1>分類に関して</h1>
+				<p>私は自宅の本棚や感想文のフォルダ分けに十進分類法を改造した分類法を用いています。ここでは、分類法の概要を記載します。分類は5桁の文字で決めていますが、冗長にしているだけなので実質3桁くらいしか用いません。</p>
+				<h2><a href="/book/W----.html">W---- 自然科学</a></h2>
+				<p>ここには自然科学の本を登録しています。応用科学との境界は恣意的に決めています。</p>
+				<h2><a href="/book/X----.html">X---- 応用科学</a></h2>
+				<p>ここには工学や農学などの、自然科学を応用して社会の課題解決を志向する分野の本を分類しています。</p>
+				<h2><a href="/book/Y----.html">Y---- 人文科学</a></h2>
+				<p>ここには人文科学の書籍を分類しています。</p>
+				<h2><a href="/book/Z----.html">Z---- 社会科学</a></h2>
+				<p>ここには社会科学の書籍を分類しています。</p>
+			</article>
+			<article>
+				<h1>本のリスト</h1>
+				<p>ここには感想文を掲載した本のリストを五十音順に並べておきます。</p>
+			</article>
+
+		</div>
+		<div id="subcontent">
+			<div id="book-classifications"></div>
+			<div id="link-and-SNS"></div>
+		</div>
+	</main>
+	<script>
+		fetch("/header.html")
+			.then((response) => response.text())
+			.then((data) => document.querySelector("#header").innerHTML = data);
+		fetch("/book/book-classifications.html")
+			.then((response) => response.text())
+			.then((data) => document.querySelector("#book-classifications").innerHTML = data);
+		fetch("/link-and-SNS.html")
+			.then((response) => response.text())
+			.then((data) => document.querySelector("#link-and-SNS").innerHTML = data);
+	</script>
+</body>
+
+</html>

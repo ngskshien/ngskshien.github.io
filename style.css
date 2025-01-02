@@ -38,7 +38,7 @@ nav a {
 
 main {
 	display: grid;
-	grid-template-columns: 600px 400px;
+	grid-template-columns: 700px 300px;
 	grid-template-rows: auto auto;
 }
 main article {
