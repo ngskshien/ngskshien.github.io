@@ -9,23 +9,6 @@
 
 <body>
 	<div id="header"></div>
-	<!--
-	<header>
-		<div id="pagetitle">
-			支援機構のホームページ
-		</div>
-		<nav>
-			<ul>
-				<li><a href="/index.html">ホーム</a></li>
-				<li><a href="/blog/blog-top.html">ブログ</a></li>
-				<li><a href="/book/book-top.html">本の感想</a></li>
-				<li><a href="/game/game-top.html">ゲームの感想</a></li>
-				<li><a href="/index.html">そのうち作る</a></li>
-				<li><a href="/index.html">そのうち作る</a></li>
-			</ul>
-		</nav>
-	</header>
-	-->
 	<main>
 		<div id="titlephoto">
 			<img src="title.jpg" width="1000">
@@ -80,7 +63,7 @@
 		</div>
 	</main>
 	<script>
-		fetch("header.html")
+		fetch("/header.html")
 			.then((response) => response.text())
 			.then((data) => document.querySelector("#header").innerHTML = data);
 	</script>
