@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<meta http-equiv="content-type" charset="utf-8">
+	<title>Y---- 人文科学</title>
+</head>
+
+<body>
+	<div id="header"></div>
+	<main>
+		<div id="content">
+			<article>
+				<h1>Y---- 人文科学</h1>
+				<p>ここには人文科学に関する本の感想文を記載します。感想文は書名の五十音順に記載しています。</p>
+			</article>
+			<article>
+				<h1>『漢文の読み方』</h1>
+				<ul>
+					<li>著者：宮本徹、松江崇</li>
+					<li>出版社：放送大学教育振興会</li>
+					<li>出版年：2019</li>
+					<li>ISBN：978-4595319266</li>
+				</ul>
+				<p>訓読法に基づく読解の知識がある程度あることを前提にして、訓読法を離れた純粋な古典中国語の文法を学ぶことができる非常に珍しいテキストです。訓点を訓読するためではなく古典中国語の統語構造を読み解くために用いていて、通常の漢文学習で身につく内容から連続的に学ぶことができるようになっています。また、後半の購読の部分である程度文章を読む練習もできるようになっており、一冊で演習まで積める濃密な一冊です。</p>
+				<p>文句があるとすれば、文章の内容が非常に体系的であるにも関わらず体裁が伴っておらず読みにくくなっていることがあります。原文・書き下し文・訳文が改行もなく並べられていて非常に見にくかったり、見出しの構造がわかりにくく今読んでいる部分がテキストの構成の中でどの部分に位置しているのかわかりにくかったり、内容が素晴らしいだけに惜しいと言わざるを得ません。また、後半の購読のパートで文法的な記述が急に薄くなり、普通に訓読法で読んでいくのとどう違うのかがやや感じにくくなっているとは思いました。</p>
+				<p>いずれにせよ、訓読法を離れて漢文を文法的に読もうとする本は（私のリサーチ力が甘いだけかもしれませんが）世間にはほとんど見当たらず、非常に貴重な教科書です。高校レベル（あるいは大学受験のレベル）を超えた漢文の学習を続けようとする人には広くお勧めできるテキストでしょう。</p>
+				<p>※放送大学の授業のテキストとして使用しましたが、本感想は授業とは独立した書籍のみに対するものです。</p>
+			</article>
+			<article>
+				<h1>『詳説漢文句法』</h1>
+				<ul>
+					<li>編著：三上英司</li>
+					<li>出版社：筑摩書房</li>
+					<li>出版年：2017</li>
+					<li>ISBN：978-4480917287</li>
+				</ul>
+				<p>通常の高校漢文の内容に沿って、例や練習問題を十分に織り交ぜながら一通りの句法を紹介しているテキストです。通読する教科書としても参照する参考書としても読むことができると思います。句法以外の漢文そのものの概説や語彙、あるいは文学史や思想史などについても簡潔な説明が与えられていて、通常の高校レベルの漢文の学習はこの本だけで完結すると思います（長文を読んで練習する過程は別として）。この手の句法の参考書は学校教材専売が多く入手困難な場合も多いですし、入手が出来ても練習問題の解答が入手不可能なことがほとんどですが、この本は普通にAmazonで購入出来て解答がついています。それだけで100点満点というほかないとすら思いますね。</p>
+			</article>
+		</div>
+		<div id="subcontent">
+			<div id="book-classifications"></div>
+			<div id="link-and-SNS"></div>
+		</div>
+	</main>
+	<script>
+		fetch("/header.html")
+			.then((response) => response.text())
+			.then((data) => document.querySelector("#header").innerHTML = data);
+		fetch("/book/book-classifications.html")
+			.then((response) => response.text())
+			.then((data) => document.querySelector("#book-classifications").innerHTML = data);
+		fetch("/link-and-SNS.html")
+			.then((response) => response.text())
+			.then((data) => document.querySelector("#link-and-SNS").innerHTML = data);
+	</script>
+</body>
+
+</html>
