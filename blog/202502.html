@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<meta http-equiv="content-type" charset="utf-8">
+	<title>ブログトップページ</title>
+</head>
+
+<body>
+	<div id="header"></div>
+	<main>
+		<div id="content">
+			<article>
+				<h1>2025年2月17日</h1>
+				<h2>最近気付いたこと</h2>
+				<p>年を取るにつれ、冬に風邪を引くことが多くなってきたような気がします。あるいは、単にこの冬の流行がすごいだけなのかもしれません。コロナ初期のわちゃわちゃが落ち着いてからは滅多にマスクをしていなかったのですが、やはり、冬はマスクをした方がいいのかもしれません。時代が変わったのか私が変わったのかわかんないなあ。</p>
+				<p></p>
+			</article>
+			<article>
+				<h1>2025年2月12日</h1>
+				<h2>1月の振り返りなど</h2>
+				<p>軽く目標の振り返りを実施します。</p>
+				<h3>社会人として</h3>
+				<p>特に進捗はなし。主に本と酒を買うのをやめ、出費は控え気味になってきている。</p>
+				<h3>趣味人として</h3>
+				<p>ここは進捗ゼロです。悲しいことです。最初に時間を削っちゃうんですよね。</p>
+				<h3>学問</h3>
+				<p>フランス語は文法をざっくり思い出して単語を覚え始めたところです（300語くらい）。社会科学に関しては、小学生向けの入門書を1/4くらい読みました。資格に関してはまず簿記をメインにやっており、春くらいに3級はなんとかなるかもしれません。なお、肝心の機械学習の進捗がないです。</p>
+			</article>
+		</div>
+		<div id="subcontent">
+			<div id="blog-list"></div>
+			<div id="link-and-SNS"></div>
+			<div>
+				<a class="twitter-timeline" data-width="300" data-height="1200" href="https://twitter.com/ngskshien?ref_src=twsrc%5Etfw">Tweets by ngskshien</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
+	</main>
+	<script>
+		fetch("/header.html")
+			.then((response) => response.text())
+			.then((data) => document.querySelector("#header").innerHTML = data);
+		fetch("/blog/blog-list.html")
+			.then((response) => response.text())
+			.then((data) => document.querySelector("#blog-list").innerHTML = data);
+		fetch("/link-and-SNS.html")
+			.then((response) => response.text())
+			.then((data) => document.querySelector("#link-and-SNS").innerHTML = data);
+	</script>
+</body>
+
+</html>
